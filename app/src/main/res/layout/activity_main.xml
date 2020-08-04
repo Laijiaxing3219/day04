@@ -7,17 +7,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ProgressBar
-        android:id="@+id/pb"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:max="100"
-        />
+    <com.example.lenovo.lan40.CircleProgressBar
+        android:id="@+id/cpb"
+        android:background="#eeeeee"
+        app:ringColor="@color/colorAccent"
+        app:circleColor="@color/colorPrimaryDark"
+        app:ringWidth="10dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp"
+        android:text="30 %"
+        app:startAngle="-90"
+        app:sweepAngle="60"
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
 
     <Button
-        android:id="@+id/btn_upload"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="HTTPUrlConnection上传文件" />
+        android:id="@+id/btn"
+        android:text="开始下载"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
 </LinearLayout>
